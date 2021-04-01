@@ -12,6 +12,8 @@
      <div class="card">
       <% if tux.photo.attached? %>
       <%= cl_image_tag tux.photo.key, style: "border-radius: 50%; height: 200px; width: 200px; margin: 10px 20px; object-fit: cover; box-shadow: 0 10px 20px 0 $blush;" %>
+      <% else %>
+      <%= image_tag 'fabio/fabio_tux.jpg', style: "border-radius: 50%; height: 200px; width: 200px; margin: 10px 20px; object-fit: cover; box-shadow: 0 10px 20px 0 $blush;" %>
       <% end %>
        <h1><%= tux.name %></h1>
        <p class="price">€<%= tux.price %>0</p>
