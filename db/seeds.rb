@@ -6,8 +6,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-require 'open-uri'
-file1 = URI.open("https://res.cloudinary.com/cydseelen/image/upload/v1612617441/h1438v7s71xkt3bn09pimtwkkh1u.jpg")
+# require 'open-uri'
+# file1 = URI.open("https://res.cloudinary.com/cydseelen/image/upload/v1612617441/h1438v7s71xkt3bn09pimtwkkh1u.jpg")
 
 
 puts "Removing old tux and users and Bookings database files"
@@ -27,7 +27,7 @@ User.create!(
     email: "cydnie@mail.com",
     password: "123456",
   )
-  
+
 puts "Adding some Turbo Tuxes :)"
 
 Tux.create!(
